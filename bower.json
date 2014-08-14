@@ -1,0 +1,6 @@
+{
+  "name": "date-polyfill",
+  "version": "0.1.0",
+  "main": "date-polyfill.js",
+  "ignore": []
+}
