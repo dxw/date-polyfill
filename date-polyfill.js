@@ -33,7 +33,11 @@ jQuery(function ($) {
         })
 
         // Set current date if it's already populated
-        humanInput.datepicker('setDate', Date.parse($this.val()))
+        // Modern browsers can Date.parse(2014-08-12), but IE8 can't
+        var m = $this.val().match(/^(\d{4})-(\d{2})-(\d{2})$/)
+        if (m) {
+            humanInput.datepicker('setDate', new Date(m[1], m[2], m[3]))
+        }
 
         // Add classes
         humanInput.addClass('date-polyfill-new-field')
