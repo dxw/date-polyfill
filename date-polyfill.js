@@ -36,7 +36,11 @@ jQuery(function ($) {
         // Modern browsers can Date.parse(2014-08-12), but IE8 can't
         var m = $this.val().match(/^(\d{4})-(\d{2})-(\d{2})$/)
         if (m) {
-            humanInput.datepicker('setDate', new Date(m[1], m[2], m[3]))
+            humanInput.datepicker('setDate', new Date(
+                parseInt(m[1], 10),
+                parseInt(m[2], 10) - 1, // Months are 0 - 11
+                parseInt(m[3], 10)
+            ))
         }
 
         // Add classes
