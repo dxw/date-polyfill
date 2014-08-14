@@ -1,3 +1,7 @@
+/**
+ * dxw's simple date input polyfill
+ */
+
 jQuery(function ($) {
     'use strict';
 
@@ -14,17 +18,30 @@ jQuery(function ($) {
     $('input[type="date"]').each(function () {
         var $this = $(this)
           , humanInput = $(document.createElement('input'))
+          , format = $this.attr('data-format')
 
-        humanInput.attr('type', 'text')
+        humanInput.attr('type', 'date')
 
+        // Copy some attributes
+        humanInput.attr('class', $this.attr('class'))
+
+        // Set up datepicker
         humanInput.datepicker({
             altField: $this,
             altFormat: 'yy-mm-dd',
-            dateFormat: 'd MM yy',
+            dateFormat: format ? format : 'd MM yy',
         })
 
+        // Set current date if it's already populated
         humanInput.datepicker('setDate', Date.parse($this.val()))
 
+        // Add classes
+        humanInput.addClass('date-polyfill-new-field')
+        $this.addClass('date-polyfill-original-field')
+
+        $this.css('display', 'none')
+
+        // Add it to the DOM
         $this.before(humanInput)
     })
 })
