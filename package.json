@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "moment": "^2.13.0",
+    "pikaday": "^1.4.0"
+  }
+}
