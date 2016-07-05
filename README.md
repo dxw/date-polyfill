@@ -10,9 +10,18 @@ A very simple polyfill for input[type="date"] using jQuery UI
 
 == Installation
 
+Run this:
+
     npm install --save git+ssh://git@github.com:dxw/date-polyfill
 
-    bower install --save 'date-polyfill=git@git.dxw.net:date-polyfill#master'
+Add this to your Browserify-complied JS:
+
+    require('date-polyfill')
+
+Add this to your SCSS:
+
+    @import "../../node_modules/pikaday/css/pikaday";
+    @import "../../node_modules/pikaday/css/site";
 
 == CSS
 
