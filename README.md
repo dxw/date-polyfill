@@ -10,6 +10,8 @@ A very simple polyfill for input[type="date"] using jQuery UI
 
 == Installation
 
+    npm install --save git+ssh://git@github.com:dxw/date-polyfill
+
     bower install --save 'date-polyfill=git@git.dxw.net:date-polyfill#master'
 
 == CSS

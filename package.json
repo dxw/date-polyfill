@@ -1,4 +1,15 @@
 {
+  "name": "date-polyfill",
+  "license": "MIT",
+  "main": "date-polyfill.js",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "author": {
+    "name": "Tom Adams",
+    "email": "tom@dxw.com",
+    "url": "https://www.dxw.com/"
+  },
   "dependencies": {
     "moment": "^2.13.0",
     "pikaday": "^1.4.0"
