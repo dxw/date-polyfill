@@ -12,7 +12,7 @@ A very simple polyfill for input[type="date"] using jQuery UI
 
 Run this:
 
-    npm install --save git+ssh://git@github.com:dxw/date-polyfill
+    yarn add git+https://github.com/dxw/date-polyfill.git
 
 Add this to your Browserify-complied JS:
 

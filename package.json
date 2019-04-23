@@ -2,12 +2,11 @@
   "name": "date-polyfill",
   "license": "MIT",
   "main": "date-polyfill.js",
-  "version": "0.0.0",
   "description": "",
   "homepage": "",
   "author": {
-    "name": "Tom Adams",
-    "email": "tom@dxw.com",
+    "name": "Mallory Adams",
+    "email": "mallory@dxw.com",
     "url": "https://www.dxw.com/"
   },
   "dependencies": {
