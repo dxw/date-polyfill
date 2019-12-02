@@ -2,6 +2,7 @@
   "name": "date-polyfill",
   "license": "MIT",
   "main": "date-polyfill.js",
+  "version": "0.0.0",
   "description": "",
   "homepage": "",
   "author": {
